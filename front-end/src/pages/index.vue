@@ -13,8 +13,8 @@ addEventListener('message', (e: { data: any}) => {
 </script>
 
 <template>
-    <div class="center gap-1">
-        <Icon :icon="hostName ? 'ic:round-check' : 'line-md:downloading-loop'" class="text-xl" />
+    <div class="center flex-col gap-1">
+        <Icon :icon="hostName ? 'ic:round-check' : 'line-md:downloading-loop'" class="text-7xl" />
         <p>{{ hostName ? `Resource '${hostName}' initialized, happy scripting` : 'Waiting for resource client' }}</p>
     </div>
 </template>
